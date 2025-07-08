@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[--brand-background] text-[--brand-white] antialiased">
         <Header />
-        {children}
+        <main className="min-h-screen px-4 md:px-8 lg:px-16">{children}</main>
         <Footer />
       </body>
     </html>
