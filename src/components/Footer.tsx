@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaInstagram, FaFacebookF, FaYoutube } from 'react-icons/fa'
-import { CMSLink } from '@/components/Link'
+import { AppLink } from '@/components/Link'
 import Link from 'next/link'
 import { Logo } from '@/components/Logo/Logo'
 import { NAV_LINKS } from '@/constants/navLinks'
@@ -70,7 +70,9 @@ export async function Footer() {
             <h3 className="font-bold mb-3 font-heading">Our Pages</h3>
             <nav className="flex flex-col space-y-2 text-sm text-brand-white hover:text-brand-primary">
               {navItems.map(({ link }, i) => (
-                <CMSLink className="text-white" key={i} {...link} />
+                <AppLink className="text-white" key={i} href={link.url}>
+                  {link.label}
+                </AppLink>
               ))}
             </nav>
           </div>
