@@ -14,6 +14,19 @@ pnpm dev
 bun dev
 ```
 
+### Tailwind CSS with PostCSS
+
+Tailwind CSS v4 requires the `@tailwindcss/postcss` plugin when used with
+PostCSS. Make sure this dependency is installed and referenced in
+`postcss.config.js`:
+
+```js
+// postcss.config.js
+module.exports = {
+  plugins: [require('@tailwindcss/postcss'), require('autoprefixer')],
+}
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
