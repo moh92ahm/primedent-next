@@ -5,6 +5,12 @@ import { cn } from '@/lib/utils'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
+import { InitTheme } from '@/providers/Theme/InitTheme'
+
+import { Providers } from '@/providers'
+
+import React from 'react'
+
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
@@ -25,11 +31,26 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={cn(cormorant.variable, montserrat.variable)}>
-      <body className="bg-[--brand-background] text-[--brand-white] antialiased">
-        <Header />
-        {children}
-        <Footer />
+    <html
+      data-theme="dark"
+      className={cn(
+        cormorant.variable,
+        montserrat.variable,
+      )}
+      lang="en"
+      suppressHydrationWarning
+    >
+      <head>
+        <InitTheme />
+        <link href="/Favicon.png" rel="icon" sizes="32x32" />
+        <link href="/Favicon.png" rel="icon" type="image/svg+xml" />
+      </head>
+      <body>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )
