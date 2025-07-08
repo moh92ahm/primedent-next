@@ -33,8 +33,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        heading: ['Cormorant Garamond', 'serif', ...defaultTheme.fontFamily.sans],
-        body: ['Montserrat', 'sans-serif'],
+        heading: ['var(--font-cormorant)', 'serif'],
+        body: ['var(--font-montserrat)', 'sans-serif'],
         sans: ['Montserrat', 'sans-serif'],
         mono: ['monospace'],
       },
