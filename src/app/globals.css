@@ -10,7 +10,7 @@
   h5,
   h6 {
     font-size: unset;
-    font-weight: unset;
+    font-weight: 700;
   }
 
   :root {
@@ -136,18 +136,7 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground min-h-[100vh] flex flex-col;
-  }
-}
 
-html {
-  opacity: 0;
-}
 
 html[data-theme='dark'],
 html[data-theme='light'] {
@@ -155,12 +144,3 @@ html[data-theme='light'] {
 }
 
 
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
