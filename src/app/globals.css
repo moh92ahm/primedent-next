@@ -10,7 +10,7 @@
   h5,
   h6 {
     font-size: unset;
-    font-weight: unset;
+    font-weight: 700;
   }
 
   :root {
