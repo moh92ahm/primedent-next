@@ -8,7 +8,6 @@ import { Cormorant_Garamond, Montserrat } from 'next/font/google'
 
 import { cn } from '@/lib/utils'
 
-
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { draftMode } from 'next/headers'
@@ -45,7 +44,6 @@ export default async function RootLayout({
       data-theme="dark"
       suppressHydrationWarning
       className={cn(
-
         cormorant.variable,
         montserrat.variable
       )}
