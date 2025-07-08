@@ -1,13 +1,19 @@
 // app/layout.tsx
 
 import type { Metadata } from 'next'
+import React from 'react'
 import './globals.css'
 
 import { Cormorant_Garamond, Montserrat } from 'next/font/google'
+
+import { cn } from '@/lib/utils'
+
+
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { draftMode } from 'next/headers'
 
-// Load fonts as CSS variables for Tailwind
+
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
@@ -17,25 +23,41 @@ const cormorant = Cormorant_Garamond({
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '500', '700'],
   variable: '--font-montserrat',
   display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'Primedent Clinics',
-  description: 'A modern dental experience with advanced care and comfort in Turkey.',
+
+  title: 'Primedent',
+  description: 'Primedent - Your trusted partner in dental care.',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const { isEnabled } = await draftMode()
+
   return (
-    <html lang="en" className={`${cormorant.variable} ${montserrat.variable}`}>
-      <body className="bg-[--brand-background] text-[--brand-white] antialiased font-body">
-        <Header />
-        <main className="min-h-screen px-4 md:px-8 lg:px-16">{children}</main>
-        <Footer />
+
+    <html
+      lang="en"
+      data-theme="dark"
+      suppressHydrationWarning
+      className={cn(
+
+        cormorant.variable,
+        montserrat.variable
+      )}
+    >
+      <head>
+        <link href="/Favicon.png" rel="icon" sizes="32x32" />
+        <link href="/Favicon.png" rel="icon" type="image/svg+xml" />
+      </head>
+      <body className="bg-background text-foreground antialiased">
+          <Header />
+          {children}
+          <Footer />
       </body>
     </html>
   )
