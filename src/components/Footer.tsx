@@ -70,7 +70,12 @@ export async function Footer() {
             <h3 className="font-bold mb-3 font-heading">Our Pages</h3>
             <nav className="flex flex-col space-y-2 text-sm text-brand-white hover:text-brand-primary">
               {navItems.map(({ link }, i) => (
-                <CMSLink className="text-white" key={i} {...link} />
+                <CMSLink
+                  className="text-white"
+                  key={i}
+                  href={link.url}
+                  label={link.label}
+                />
               ))}
             </nav>
           </div>
