@@ -102,8 +102,8 @@ const config = {
         },
       },
       fontFamily: {
-        mono: ['var(--font-geist-mono)'],
-        sans: ['Montserrat', 'var(--font-geist-sans)', 'sans-serif'],
+        mono: ['monospace'],
+        sans: ['Montserrat', 'sans-serif'],
         heading: ['Cormorant Garamond', 'serif'],
         body: ['Montserrat', 'sans-serif'],
       },
