@@ -45,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link href="/Favicon.png" rel="icon" sizes="32x32" />
         <link href="/Favicon.png" rel="icon" type="image/svg+xml" />
       </head>
-      <body>
+      <body className='bg-background text-foreground antialiased min-h-screen flex flex-col'>
         <Providers>
           <Header />
           {children}
