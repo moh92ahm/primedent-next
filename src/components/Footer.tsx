@@ -1,32 +1,13 @@
 import React from 'react'
-
 import { FaInstagram, FaFacebookF, FaYoutube } from 'react-icons/fa'
-
-import type { Footer as FooterType } from '@/payload-types'
-
 import { CMSLink } from '@/components/Link'
 import Link from 'next/link'
 import { Logo } from '@/components/Logo/Logo'
+import { NAV_LINKS } from '@/constants/navLinks'
 
 export async function Footer() {
-  const footerData: FooterType = {
-    navItems: [
-      { link: { url: '/', label: 'Home', type: 'custom' } },
-      { link: { url: '/about-us', label: 'About Us', type: 'custom' } },
-      { link: { url: '/dr-serhat', label: 'Dr. Serhat', type: 'custom' } },
-      { link: { url: '/services', label: 'Services', type: 'custom' } },
-      { link: { url: '/contact-us', label: 'Contact Us', type: 'custom' } },
-    ],
-  } as FooterType
-
-  const services = [
-    'Hollywood Smile',
-    'All-on-4/6',
-    'Dental Implant',
-    'Zirconium Crown',
-  ]
-
-  const navItems = footerData?.navItems || []
+  const services = ['Hollywood Smile', 'All-on-4/6', 'Dental Implant', 'Zirconium Crown']
+  const navItems = NAV_LINKS
 
   return (
     <footer className="relative overflow-hidden font-body text-white bg-gradient-to-t from-brand-dark to-transparent">
@@ -88,9 +69,9 @@ export async function Footer() {
           <div>
             <h3 className="font-bold mb-3 font-heading">Our Pages</h3>
             <nav className="flex flex-col space-y-2 text-sm text-brand-white hover:text-brand-primary">
-              {navItems.map(({ link }, i) => {
-                return <CMSLink className="text-white" key={i} {...link} />
-              })}
+              {navItems.map(({ link }, i) => (
+                <CMSLink className="text-white" key={i} {...link} />
+              ))}
             </nav>
           </div>
 
