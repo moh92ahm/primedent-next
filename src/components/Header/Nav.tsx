@@ -1,8 +1,6 @@
 'use client'
 
 import React from 'react'
-import Link from 'next/link'
-import { SearchIcon } from 'lucide-react'
 import { CMSLink } from '@/components/Link'
 import type { NavItem } from '@/constants/navLinks'
 
@@ -16,10 +14,6 @@ export const HeaderNav: React.FC<Props> = ({ navItems }) => {
       {navItems.map(({ link }, i) => (
         <CMSLink key={i} {...link} appearance="link" />
       ))}
-      <Link href="/search">
-        <span className="sr-only">Search</span>
-        <SearchIcon className="w-5 text-primary" />
-      </Link>
     </nav>
   )
 }
