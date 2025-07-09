@@ -24,7 +24,7 @@ export const HeaderClient: React.FC = () => {
           <Logo loading="eager" priority="high" className="invert dark:invert-0" />
         </Link>
         {/* Desktop Nav */}
-        <div className="hidden md:block">
+        <div className="hidden md:block ">
           <HeaderNav navItems={NAV_LINKS} />
         </div>
 

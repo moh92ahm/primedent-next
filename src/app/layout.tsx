@@ -49,7 +49,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className='bg-background text-foreground antialiased min-h-screen flex flex-col'>
         {/* <Providers> */}
           <Header />
+          <main className="flex-1 font-body text-foreground">
           {children}
+          </main>
           <Footer />
         {/* </Providers> */}
       </body>

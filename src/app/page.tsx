@@ -22,7 +22,7 @@ export default function Page() {
 
           {/* Hero Section (75%) */}
           <section className="flex-1 basis-2/4 flex flex-col justify-center">
-            <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto w-full h-full px-6 gap-8 items-center">
+            <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto w-full h-full gap-8 items-center">
               {/* Left: RichText & CTA */}
               <div className="flex-1 text-center md:text-left md:max-w-md z-10 flex flex-col justify-center items-center md:items-start">
                   <h1 className="text-6xl font-bold font-heading text-brand-primary mb-4">
@@ -39,11 +39,11 @@ export default function Page() {
               {/* Right: Hero Image */}
               <div className="flex-1 flex justify-end items-end">
                 <Image
-                  src="/hero-doctor-image.png"
+                  src="/dtserhatcelik.png"
                   alt="hero"
                   width={400}
                   height={600}
-                  className="object-contain w-full max-h-[70vh]"
+                  className="object-contain w-full max-h-[75vh]"
                 />
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Page() {
 
       {/* Services Section */}
       <div className="max-w-screen-xl mx-auto px-6 text-center my-24">
-        <h3 className="text-lg text-brand-primary mb-2"># What We Do Best</h3>
+        <p className="text-lg text-brand-primary mb-4"># What We Do Best</p>
         <h2 className="text-4xl font-heading text-brand-primary font-bold mb-10">Top Dental Treatments, Delivered with Precision</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
@@ -174,11 +174,11 @@ export default function Page() {
             </p>
           </div>
           <TestimonialSlider testimonials={[
-            { name: 'John Doe', role: 'Patient', quote: 'Amazing experience! The staff was friendly and the treatment was top-notch.', star: 5 },
-            { name: 'Jane Smith', role: 'Patient', quote: 'Highly recommend! The clinic is clean and the doctors are very professional.' , star: 5 },
-            { name: 'Alice Johnson', role: 'Patient', quote: 'I had a great experience at Primedent. The team was very attentive and made me feel comfortable.', star: 5 },
-            { name: ' ', role: 'Patient', quote: ' I was nervous about my dental work, but the team at Primedent made it a breeze. Highly satisfied!' , star: 5 },
-            { name: ' ', role: 'Patient', quote: ' I love my new smile! The results exceeded my expectations and the care was exceptional.', star: 5 },
+            { name: 'Darren Mears', role: 'Patient', quote: "Perfect couldn't fault them on anything very friendly. Everything done in a few days and the results are amazing I would definitely recommend them to anyone", star: 5 },
+            { name: 'Jade Dean', role: 'Patient', quote: "The service was very professional from the start to the end, all the arrangements were made absolutely excellent. The Dentist and dental nurses were very friendly and their work was excellent. I can't believe how good my teeth look and I have no hesitation in recommending them whoheartedly." , star: 5 },
+            { name: 'Galya Valentinova', role: 'Patient', quote: "Absolutely number 1 place to do Hollywood smile! From 1st day we contacted them, they were Absolutely perfect with us! They organised everything very quick and good! All doctors and people who worked there was Absolutely spot on! 100 percent helpful and made perfect job!", star: 5 },
+            { name: 'Elizabeth Oyenike Babalola', role: 'Patient', quote: "Wow at my new teeth!!! It all began when I was looking to have my teeth done for medical reason (and was a fortune to do in the UK) and amongst many clinics in Turkey. Overall the care I received here was super amazing, Their review on Trustpilot stood out. The best dentist I have ever met, patient with me all the way and kept tweaking until I was satisfied. I have a new smile and I’m super proud…" , star: 5 },
+            { name: 'Bjorn van der Louw', role: 'Patient', quote: "Great experience. Lovely People. Help you a lot with everything. Its clean. Its great. When you want do your teeths. Then i say yes go to them. Greatfull.", star: 5 },
           ]} />
         </div>
       </section>

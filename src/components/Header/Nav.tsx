@@ -10,7 +10,7 @@ interface Props {
 
 export const HeaderNav: React.FC<Props> = ({ navItems }) => {
   return (
-    <nav className="flex flex-col md:flex-row gap-3 space-y-8 md:space-y-0 items-center text-xl md:text-base">
+    <nav className="flex flex-col md:flex-row gap-3 space-y-8 md:space-y-0 items-center">
       {navItems.map(({ link }, i) => (
         <AppLink key={i} href={link.url} variant="link">
           {link.label}
