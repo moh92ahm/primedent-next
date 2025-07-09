@@ -19,9 +19,9 @@ export default function AboutUsPage() {
             </div>
           </div>
       {/* Who We Are Section */}
-      <div className="max-w-screen-xl mx-auto px-6 md:flex md:items-center md:gap-10 mb-24">
+      <div className="max-w-screen-xl mx-auto px-6 md:flex md:items-center md:gap-10 mb-24 md:mb-44">
         <div className="md:w-1/2 w-full">
-          <h3 className="text-brand-primary text-lg mb-2"># Who We Are</h3>
+          <p className="text-brand-primary text-lg mb-2"># Who We Are</p>
           <h2 className="text-4xl font-bold font-heading text-brand-primary mb-4">Redefining Dental Care</h2>
           <p className="text-brand-white">
             PrimeDent Clinics was founded with a clear vision: to elevate the standard of dental care by focusing on patient well-being, innovation, and excellence. Our approach is holistic, providing a warm, patient-centered experience that inspires trust in every interaction. At PrimeDent, we believe dentistry should not just address problems but be transformational.
@@ -30,7 +30,7 @@ export default function AboutUsPage() {
           </p>
         </div>
         <div className="md:w-1/2 w-full mt-10 md:mt-0">
-          <Image src="/" alt="" width={400} height={400} className="rounded w-full object-contain" priority />
+          <Image src="/about-us-who-we-are.jpg" alt="" width={1000 } height={1000} className="rounded w-full object-contain" priority />
         </div>
       </div>
 
@@ -40,7 +40,7 @@ export default function AboutUsPage() {
           <Image src="/about-us-our-mission-and-values.jpg" alt="" width={400} height={400} className=" w-full object-contain h-[800px]" priority />
         </div>
         <div className="md:w-1/2 w-full">
-          <h3 className="text-brand-primary text-lg mb-2"># Our Vision & Values</h3>
+          <p className="text-brand-primary text-lg mb-2"># Our Vision & Values</p>
           <h2 className="text-4xl font-bold font-heading text-brand-primary mb-4">Driven By Purpose, Guided By Principles</h2>
           <p className="text-brand-white mb-6">
             To provide healthcare and well-being to our community by providing compassionate, high-quality dental solutions with integrity.
@@ -72,7 +72,7 @@ export default function AboutUsPage() {
       </div>
       {/* Services Section */}
       <div className="max-w-screen-xl mx-auto px-6 text-center mb-16">
-        <h3 className="text-lg text-brand-primary mb-2"># What We Do Best</h3>
+        <p className="text-lg text-brand-primary mb-2"># What We Do Best</p>
         <h2 className="text-4xl font-heading text-brand-primary font-bold mb-10">Top Dental Treatments, Delivered with Precision</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
@@ -129,7 +129,7 @@ export default function AboutUsPage() {
             <Image src="/about-us-why-choose-us.jpg" alt="Why Choose Us" width={400} height={300} className="w-full h-[400px] object-cover" priority />
           </div>
           <div className="md:w-1/2 w-full">
-            <h3 className="text-lg text-brand-white mb-1"># Why Choose Us</h3>
+            <p className="text-lg text-brand-primary mb-1"># Why Choose Us</p>
             <h2 className="text-4xl font-bold font-heading text-brand-primary mb-4">Excellence in Healthcare Rooted in Trust.</h2>
             <p className="text-brand-white mb-6">
               From international patients to returning local families, PrimeDent has been the top choice in dental excellence. We speak your language, embrace your diversity, and welcome you with compassion.

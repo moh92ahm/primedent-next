@@ -31,13 +31,13 @@ export async function Footer() {
 
       {/* Main Footer */}
       <div className="py-12 px-6 md:px-20 relative z-10">
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="max-w-screen-xl mx-auto gap-10 flex flex-col md:flex-row items-start md:items-center justify-between">
           {/* Logo and Social Links */}
           <div>
-            <div className="mb-4">
+            <div className="mb-4 md:basis-1/4 lg:basis-1/5 flex flex-col items-start">
               <Logo className="h-auto mb-2" />
             </div>
-            <p className="text-sm text-gray-300 mb-4">
+            <p className="text-sm text-brand-white mb-4">
               we are committed to delivering exceptional healthcare with compassion, expertise, and innovation. Our dedicated.
             </p>
             <div className="flex space-x-3 mt-4">
@@ -67,47 +67,49 @@ export async function Footer() {
               </a>
             </div>
           </div>
-          
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-bold mb-3 font-heading">Our Pages</h3>
-            <nav className="flex flex-col space-y-2 text-sm text-brand-white hover:text-brand-primary">
-              {navItems.map(({ link }, i) => (
-                <AppLink className="text-white" key={i} href={link.url}>
-                  {link.label}
-                </AppLink>
-              ))}
-            </nav>
-          </div>
-          {/* Services */}
-          <div>
-            <h3 className="font-bold mb-3 font-heading">Services</h3>
-            <ul className="space-y-2 text-sm text-brand-white">
-              {services.map((title, idx) => (
-                <li key={idx}>{title}</li>
-              ))}
-            </ul>
-          </div>
-          {/* Contact Information */}
-          <div>
-            <h3 className="font-bold mb-3 font-heading ">Contact Us </h3>
-            <ul className="space-y-2 text-sm text">
-              <li>
-                <strong>Address</strong>
-                <br />
-                Selçuk Blv No:14, Kuşadası, Turkey
-              </li>
-              <li>
-                <strong>Phone Number</strong>
-                <br />
-                0549 681 54 13
-              </li>
-              <li>
-                <strong>Email Address</strong>
-                <br />
-                info@primedentada.com
-              </li>
-            </ul>
+
+          <div className="md:basis-3/4 lg:basis-4/5 grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Quick Links */}
+            <div>
+              <h3 className="font-bold mb-3 font-heading">Our Pages</h3>
+              <nav className="flex flex-col space-y-2 text-sm text-brand-white hover:text-brand-primary">
+                {navItems.map(({ link }, i) => (
+                  <AppLink className="text-white" key={i} href={link.url}>
+                    {link.label}
+                  </AppLink>
+                ))}
+              </nav>
+            </div>
+            {/* Services */}
+            <div>
+              <h3 className="font-bold mb-3 font-heading">Services</h3>
+              <ul className="space-y-2 text-sm text-brand-white">
+                {services.map((title, idx) => (
+                  <li key={idx}>{title}</li>
+                ))}
+              </ul>
+            </div>
+            {/* Contact Information */}
+            <div>
+              <h3 className="font-bold mb-3 font-heading ">Contact Us </h3>
+              <ul className="space-y-2 text-sm text">
+                <li>
+                  <strong>Address</strong>
+                  <br />
+                  Selçuk Blv No:14, Kuşadası, Turkey
+                </li>
+                <li>
+                  <strong>Phone Number</strong>
+                  <br />
+                  0549 681 54 13
+                </li>
+                <li>
+                  <strong>Email Address</strong>
+                  <br />
+                  info@primedentada.com
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
