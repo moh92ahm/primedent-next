@@ -93,11 +93,11 @@ export default function AboutUsPage() {
       {/* Call to Action Section */}
       <div className= "flex justify-between max-w-screen-xl mx-auto bg-black text-left py-10 px-6 md:px-20">
         <div className=" items-start">
-          <h3 className=" text-lg text-brand-white mb-1"># Not Sure Where To Start?</h3>
+          <p className=" text-lg text-brand-white mb-1"># Not Sure Where To Start?</p>
           <h2 className="max-w-xl text-3xl font-bold text-brand-primary font-heading mb-4">Let us help you with a personalized dental plan and quote.</h2>
         </div>
         <div className="flex items-center">
-          <Link className="inline-block bg-brand-primary text-brand-dark py-3 px-6 font-bold font-heading text-lg " href="/contact">
+          <Link className="inline-block bg-brand-primary text-brand-dark py-3 px-6 font-bold font-heading text-lg " href="/contact-us">
             Get Free Consultation
           </Link>
         </div>

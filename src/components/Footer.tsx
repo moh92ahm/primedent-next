@@ -21,7 +21,7 @@ export async function Footer() {
             </h2>
           </div>
           <Link
-            href="/contact"
+            href="/contact-us"
             className="bg-brand-dark text-white px-6 py-3 flex items-center gap-2 mt-4 md:mt-0 hover:bg-gray-800 transition"
           >
             Get Free Consultation <span>→</span>

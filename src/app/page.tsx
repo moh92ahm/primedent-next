@@ -31,7 +31,7 @@ export default function Page() {
                   <p className="text-lg text-brand-white mb-4">
                     With a focus on holistic well-being, we aim to provide personalized care that improves your smile.
                   </p>
-                  <Link href="/services" className="bg-brand-primary text-brand-dark font-heading font-bold text-lg py-2 px-6 rounded hover:bg-brand-accent transition">
+                  <Link href="/contact-us" className="bg-brand-primary text-brand-dark font-heading font-bold text-lg py-2 px-6 rounded hover:bg-brand-accent transition">
                     Get Free Consultation
                   </Link>
               </div>
@@ -115,9 +115,9 @@ export default function Page() {
               across Europe transform their smiles — safely and affordably. Our clinic combines precision,
               hospitality, and aesthetic results in one experience.
             </p>
-            <button className="bg-brand-primary text-brand-dark font-heading font-bold text-xl px-6 py-2 rounded hover:bg-brand-accent transition">
+            <Link href="/about-us" className="bg-brand-primary text-brand-dark font-heading font-bold text-xl px-6 py-2 rounded hover:bg-brand-accent transition">
               More About Us →
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -137,9 +137,9 @@ export default function Page() {
               dental care possible. Our team understands that dental anxiety can prevent patients from
               scheduling appointments, so we aim to ensure that your visit to Primedent is unlike any other.
             </p>
-            <button className="bg-brand-primary text-brand-dark font-heading font-bold text-xl px-6 py-2 rounded hover:bg-brand-accent transition">
+            <Link href="dr-serhat" className="bg-brand-primary text-brand-dark font-heading font-bold text-xl px-6 py-2 rounded hover:bg-brand-accent transition">
               Learn More →
-            </button>
+            </Link>
           </div>
 
           {/* Image */}
