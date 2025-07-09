@@ -28,7 +28,7 @@ export default function DrSerhatPage() {
           <p className="text-lg text-brand-primary mb-2"># Best Dentist</p>
           <h3 className="text-4xl text-brand-primary font-heading font-bold mb-4">Dr. Serhat</h3>
           <p className="text-brand-white mb-6">
-            Dr. Serhat Çelik was born in 1982 in İzmir. He graduated from Süleyman Demirel University Faculty of Dentistry in 2007. After gaining experience in private practice, he founded Dentapark Oral and Dental Health Polyclinic in 2012, which he continues to operate. In 2016, he established Dentapark Digital Laboratory, and in 2024, co-founded SvS Oral and Dental Health Polyclinic with his close friend Dt. Serkan Kırveli. He is also the founder of Primedent Poland, launched in 2025. Dr. Serhat has performed over 15,000 successful dental implant surgeries and is widely recognized for his excellence in dental aesthetics and implantology.
+            Dr. Serhat Çelik was born in 1982 in İzmir. He graduated from Süleyman Demirel University Faculty of Dentistry in 2007. After gaining experience in private practice, he founded Dentapark Oral and Dental Health Polyclinic in 2012, which he continues to operate. In 2016, he established Dentapark Digital Laboratory, and in 2024, co-founded SvS Oral and Dental Health Polyclinic. He is also the founder of Primedent Poland, launched in 2025. Dr. Serhat has performed over 15,000 successful dental implant surgeries and is widely recognized for his excellence in dental aesthetics and implantology.
           </p>
 
           <div className="space-y-3">
