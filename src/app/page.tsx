@@ -98,7 +98,7 @@ export default function Page() {
           {/* Image*/}
           <div className="relative w-full md:w-1/2 flex justify-center">
             <div className="w-[70%] mb-10 md:mb-0">
-              <Image src="/about-us-our-mission-and-values.jpg" alt="" width={400} height={400} className=" w-full object-contain h-[800px]" priority />
+              <Image src="/about-us-our-mission-and-values.jpg" alt="" width={400} height={400} className=" w-full object-contain md:h-[800px]" priority />
             </div>
           </div>
 
