@@ -5,9 +5,9 @@ import { cn } from '@/lib/utils'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
-import { InitTheme } from '@/providers/Theme/InitTheme'
+// import { InitTheme } from '@/providers/Theme/InitTheme'
 
-import { Providers } from '@/providers'
+// import { Providers } from '@/providers'
 
 import React from 'react'
 
@@ -41,16 +41,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <head>
-        <InitTheme />
+        {/* <InitTheme /> */}
+        {/* to make it default dark */}
         <link href="/Favicon.png" rel="icon" sizes="32x32" />
         <link href="/Favicon.png" rel="icon" type="image/svg+xml" />
       </head>
       <body className='bg-background text-foreground antialiased min-h-screen flex flex-col'>
-        <Providers>
+        {/* <Providers> */}
           <Header />
           {children}
           <Footer />
-        </Providers>
+        {/* </Providers> */}
       </body>
     </html>
   )
