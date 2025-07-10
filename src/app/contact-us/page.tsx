@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import React from 'react'
 
+import ContactFormWithMessage from '@/components/Forms/ContacFormWithMessage'
+
 export const metadata: Metadata = {
   title: 'Contact Us | Primedent',
 }
@@ -23,42 +25,9 @@ export default function ContactUsPage() {
           <h2 className="mb-6 text-brand-primary text-4xl font-bold font-heading">
             Stay Connected <br /> for Better Health.
           </h2>
-          <form className="space-y-6">
-            <div className="flex flex-col md:flex-row gap-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full px-4 py-2 bg-transparent border border-brand-light text-white"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full px-4 py-2 bg-transparent border border-brand-light text-white"
-              />
-            </div>
-            <div className="flex flex-col md:flex-row gap-6">
-              <input
-                type="text"
-                placeholder="Phone Number"
-                className="w-full px-4 py-2 bg-transparent border border-brand-light text-white"
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                className="w-full px-4 py-2 bg-transparent border border-brand-light text-white"
-              />
-            </div>
-            <textarea
-              placeholder="Write a Message..."
-              className="w-full px-4 py-2 bg-transparent border border-brand-light text-white h-32"
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-brand-primary font-heading text-xl text-brand-dark px-6 py-3"
-            >
-              Book An Appointment →
-            </button>
-          </form>
+          <div>
+          <ContactFormWithMessage />
+          </div>
         </div>
 
         {/* Contact Info */}

@@ -8,7 +8,8 @@ import Image from 'next/image'
 import BeforeAfterSlider from '@/components/BeforeAfter'
 import TestimonialSlider from '@/components/Testimonials/TestimonialSlider'
 
-import ContactForm from '@/components/ContactForm'
+import ContactForm from '@/components/Forms/SimpleContactForm'
+
 
 import ServicesSection from '@/components/ServicesSection'
 
@@ -65,12 +66,12 @@ export default function Page() {
               </div>
 
               {/* Contact Form */}
-              <div className="flex-1 w-full">
+              <div className="flex-1 w-full font-body">
                 <ContactForm />
+               
               </div>
             </div>
           </section>
-
         </div>
 
 
