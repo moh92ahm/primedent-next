@@ -27,9 +27,9 @@ export default function Page() {
           <section className="flex-1 basis-2/4 flex flex-col justify-center">
             <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto w-full h-full gap-8 items-center">
               {/* Left: RichText & CTA */}
-              <div className="flex-1 text-center md:text-left md:max-w-md z-10 flex flex-col justify-center items-center md:items-start">
-                  <h1 className="text-6xl font-bold font-heading text-brand-primary mb-4">
-                    Perfect Smiles Prime Dent Clinics.
+              <div className="flex-1 text-center md:text-left md:max-w-md mx-auto px-6 z-10 flex flex-col justify-center items-center md:items-start">
+                  <h1 className="text-5xl md:text-6xl mt-10 md:mt-0 font-bold font-heading text-brand-primary mb-4">
+                    Perfect Smiles Prime Dent Clinics
                   </h1>
                   <p className="text-lg text-brand-white mb-4">
                     With a focus on holistic well-being, we aim to provide personalized care that improves your smile.
@@ -95,7 +95,7 @@ export default function Page() {
           
           {/* Image*/}
           <div className="relative w-full md:w-1/2 flex justify-center">
-            <div className="w-[70%] mb-10 md:mb-0">
+            <div className="md:w-1/2 w-full mb-10 md:mb-0">
               <Image src="/about-us-our-mission-and-values.jpg" alt="" width={400} height={400} className=" w-full object-contain md:h-[800px]" priority />
             </div>
           </div>
