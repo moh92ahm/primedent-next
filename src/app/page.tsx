@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="relative text-brand-white overflow-hidden">
-        <div className="text-brand-white min-h-screen flex flex-col">
+        <div className="text-brand-white flex flex-col">
 
           {/* Hero Section (75%) */}
           <section className="flex-1 basis-2/4 flex flex-col justify-center">
@@ -42,11 +42,11 @@ export default function Page() {
               {/* Right: Hero Image */}
               <div className="flex-1 flex justify-end items-end">
                 <Image
-                  src="/dtserhatcelik.png"
+                  src="/dt-serhat-hero.png"
                   alt="hero"
                   width={400}
                   height={600}
-                  className="object-contain w-full max-h-[75vh]"
+                  className="object-contain w-full max-h-[75vh] rounded-lg"
                 />
               </div>
             </div>
@@ -143,7 +143,7 @@ export default function Page() {
           {/* Image */}
           <div className="md:w-1/2 flex justify-center">
             <div className='w-full max-w-[90%] bg-brand-white bg-opacity-80 flex items-end'>
-              <Image src="/dtserhatcelik.png" alt="Dr. Serhat" width={400} height={400} className="w-full object-cover h-[600px]" priority />
+              <Image src="/dtserhatcelik.png" alt="Dr. Serhat" width={400} height={400} className="w-full object-cover" priority />
             </div>
           </div>
         </div>

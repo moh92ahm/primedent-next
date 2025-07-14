@@ -14,7 +14,6 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ before, after }) 
         itemOne={<ReactCompareSliderImage src={before} alt="Before" />}
         itemTwo={<ReactCompareSliderImage src={after} alt="After" />}
         position={50}
-        
       />
     </div>
   )
