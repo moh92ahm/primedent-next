@@ -142,7 +142,7 @@ export default function Page() {
 
           {/* Image */}
           <div className="md:w-1/2 flex justify-center">
-            <div className='w-full max-w-[90%] bg-brand-white bg-opacity-80 flex items-end'>
+            <div className='w-full max-w-[80%] bg-brand-white bg-opacity-80 flex items-end'>
               <Image src="/dtserhatcelik.png" alt="Dr. Serhat" width={400} height={400} className="w-full object-cover" priority />
             </div>
           </div>

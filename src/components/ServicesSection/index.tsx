@@ -42,7 +42,3 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
 );
 
 export default ServicesSection;
-
-
-
-
