@@ -38,7 +38,7 @@ export async function Footer() {
               <Logo className="h-auto mb-2" />
             </div>
             <p className="text-sm text-brand-white mb-4">
-              we are committed to delivering exceptional healthcare with compassion, expertise, and innovation. Our dedicated.
+              we are committed to delivering exceptional healthcare with compassion, expertise, and innovation.
             </p>
             <div className="flex space-x-3 mt-4">
               <a

@@ -94,9 +94,9 @@ export default function Page() {
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
           
           {/* Image*/}
-          <div className="relative w-full md:w-1/2 flex justify-center">
-            <div className="md:w-1/2 w-full mb-10 md:mb-0">
-              <Image src="/about-us-our-mission-and-values.jpg" alt="" width={400} height={400} className=" w-full object-contain md:h-[800px]" priority />
+          <div className="relative md:w-1/2 w-full flex justify-center">
+            <div className="w-full max-w-[80%] mb-10 md:mb-0">
+              <Image src="/about-us-our-mission-and-values.jpg" alt="" width={400} height={400} className=" w-full object-cover md:h-[800px]" priority />
             </div>
           </div>
 
@@ -142,8 +142,8 @@ export default function Page() {
 
           {/* Image */}
           <div className="md:w-1/2 flex justify-center">
-            <div className='relative w-full max-w-lg h-[600px] bg-brand-white bg-opacity-80 flex items-end'>
-              <Image src="/dtserhatcelik.png" alt="Dr. Serhat" width={400} height={400} className="w-full object-contain h-[600px]" priority />
+            <div className='w-full max-w-[90%] bg-brand-white bg-opacity-80 flex items-end'>
+              <Image src="/dtserhatcelik.png" alt="Dr. Serhat" width={400} height={400} className="w-full object-cover h-[600px]" priority />
             </div>
           </div>
         </div>
