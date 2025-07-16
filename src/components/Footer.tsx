@@ -31,14 +31,14 @@ export async function Footer() {
 
       {/* Main Footer */}
       <div className="py-12 px-6 md:px-20 relative z-10">
-        <div className="max-w-screen-xl mx-auto gap-10 flex flex-col md:flex-row items-start md:items-center justify-between">
+        <div className="max-w-screen-xl mx-auto gap-10 flex flex-col md:flex-row items-start justify-between">
           {/* Logo and Social Links */}
-          <div>
-            <div className="mb-4 md:basis-1/4 lg:basis-1/5 flex flex-col items-start">
+          <div className='space-between'>
+            <div className="mb-4 md:basis-1/4 lg:basis-1/5 flex flex-col items-start align-top">
               <Logo className="h-auto mb-2" />
             </div>
             <p className="text-sm text-brand-white mb-4">
-              we are committed to delivering exceptional healthcare with compassion, expertise, and innovation.
+              We are committed to delivering exceptional healthcare with compassion, expertise, and innovation.
             </p>
             <div className="flex space-x-3 mt-4">
               <a
